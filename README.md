@@ -25,3 +25,9 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Created a mini dataset with `age`, `income`, `bought`.
 - Marked features (`age`, `income`) and target (`bought`).
 
+## Day 2 Completed
+- Загрузили датасет Titanic (891 строка, 12 колонок)
+- Нашли пропуски: Age (177), Cabin (687), Embarked (2)
+- Age заполнили медианой, Embarked — самым частым значением, Cabin удалили
+- Sex преобразовали в числа: male=0, female=1
+- Только 38% пассажиров выжили
