@@ -39,3 +39,11 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Обучили LinearRegression
 - MAE модели: 0.53 ($53,000) vs Baseline: 0.91 ($91,000)
 - Модель в 2 раза точнее чем просто предсказывать среднее
+
+## Day 4 Completed
+
+- Обучили LogisticRegression на данных Titanic
+- Accuracy: 80% — модель правильно классифицирует 80% пассажиров
+- Confusion matrix: 90 TN, 53 TP, 15 FP, 21 FN
+- Какая ошибка хуже — зависит от контекста задачи
+- Precision/Recall/F1 дают более детальную картину чем просто accuracy
