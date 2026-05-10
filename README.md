@@ -31,3 +31,11 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Age заполнили медианой, Embarked — самым частым значением, Cabin удалили
 - Sex преобразовали в числа: male=0, female=1
 - Только 38% пассажиров выжили
+
+## Day 3 Completed
+
+- Загрузили California Housing датасет (20,640 домов)
+- Разделили данные: 80% train, 20% test
+- Обучили LinearRegression
+- MAE модели: 0.53 ($53,000) vs Baseline: 0.91 ($91,000)
+- Модель в 2 раза точнее чем просто предсказывать среднее
