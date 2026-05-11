@@ -8,6 +8,6 @@ Progress notes for long-term ML study.
 - [x] Day 3: regression
 - [x] Day 4: classification and metrics
 - [x] Day 5: trees and random forest
-- [ ] Day 6: leakage, overfitting, pipeline
+- [x] Day 6: leakage, overfitting, pipeline
 - [ ] Day 7: mini project
 

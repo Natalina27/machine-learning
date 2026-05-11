@@ -56,3 +56,11 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Топ признаки: Fare (0.30), Sex (0.27), Age (0.26)
 - Fare важнее всего — богатых спасали первыми (каюты ближе к шлюпкам)
 - Sex на втором месте — правило "женщины и дети первыми" подтверждается данными
+
+## Day 6 Completed
+
+- Pipeline автоматизирует цепочку: StandardScaler → LogisticRegression
+- StandardScaler приводит все признаки к одному масштабу
+- Один train/test: accuracy 0.80 (может повезти с разбивкой)
+- Кросс-валидация (5 фолдов): accuracy 0.78 ± 0.02 — честнее и стабильнее
+- Маленький Std (0.02) = модель стабильна
