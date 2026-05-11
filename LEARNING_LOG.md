@@ -7,7 +7,7 @@ Progress notes for long-term ML study.
 - [x] Day 2: pandas basics
 - [x] Day 3: regression
 - [x] Day 4: classification and metrics
-- [ ] Day 5: trees and random forest
+- [x] Day 5: trees and random forest
 - [ ] Day 6: leakage, overfitting, pipeline
 - [ ] Day 7: mini project
 

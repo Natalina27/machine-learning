@@ -47,3 +47,12 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Confusion matrix: 90 TN, 53 TP, 15 FP, 21 FN
 - Какая ошибка хуже — зависит от контекста задачи
 - Precision/Recall/F1 дают более детальную картину чем просто accuracy
+
+## Day 5 Completed
+
+- Decision Tree accuracy: 0.76
+- Random Forest accuracy: 0.80 — чем больше деревьев тем точнее
+- Почему RF лучше: 100 деревьев голосуют, побеждает большинство
+- Топ признаки: Fare (0.30), Sex (0.27), Age (0.26)
+- Fare важнее всего — богатых спасали первыми (каюты ближе к шлюпкам)
+- Sex на втором месте — правило "женщины и дети первыми" подтверждается данными
