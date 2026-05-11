@@ -64,3 +64,17 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - Один train/test: accuracy 0.80 (может повезти с разбивкой)
 - Кросс-валидация (5 фолдов): accuracy 0.78 ± 0.02 — честнее и стабильнее
 - Маленький Std (0.02) = модель стабильна
+
+## Day 7 Completed
+## Выводы
+
+- Baseline (предсказывать самый частый класс): 0.59
+- Лучшая модель: Random Forest — accuracy 0.81 (+22% к baseline)
+- Logistic Regression и Decision Tree: 0.78
+- Random Forest стабильнее — предсказания менее зависят от разбивки данных
+- Самые важные признаки: Fare, Sex, Age (богатые, женщины и дети выживали чаще)
+
+## Что можно улучшить
+- Добавить feature engineering (например, размер семьи = SibSp + Parch)
+- Подобрать гиперпараметры Random Forest
+- Попробовать градиентный бустинг (следующий шаг после этой недели)
