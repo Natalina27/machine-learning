@@ -1,11 +1,11 @@
 # Machine Learning Journey
 
-Hands-on ML notebooks - from fundamentals to production-ready pipelines.
+Hands-on ML notebooks — from fundamentals to production-ready pipelines.
 
 ## Quick Start
 ```bash
-python3 -m pip install pandas notebook
-python3 -m notebook
+pip install -r requirements.txt
+jupyter notebook
 ```
 
 Open `week-1/day-1-intro/day1.ipynb`.
@@ -14,67 +14,23 @@ Open `week-1/day-1-intro/day1.ipynb`.
 Learn machine learning from scratch in a practical, notebook-first format.
 
 ## Repository Structure
-- `week-1/day-1-intro/` - ML basics: terms and first mini dataset.
-- `week-1/day-2-pandas/` - data loading and cleaning.
-- Progress log: [`LEARNING_LOG.md`](LEARNING_LOG.md)
+- `week-1/day-1-intro/` — ML basics: terms and first mini dataset
+- `week-1/day-2-pandas/` — data loading and cleaning
+- `week-1/day-3-regression/` — Linear Regression, MAE/RMSE, baseline
+- `week-1/day-4-classification/` — Logistic Regression, confusion matrix, F1
+- `week-1/day-5-trees/` — Decision Tree, Random Forest, feature importances
+- `week-1/day-6-pipeline/` — Pipeline, StandardScaler, cross-validation
+- `week-1/day-7-project/` — final project: full ML pipeline on Titanic
+- `resources/` — study plans and reference materials
 
-## Day 1 Completed
-- Defined what ML is and how it differs from rule-based `if/else` logic.
-- Learned the difference between **Classification** and **Regression**.
-- Understood why data is split into train/test.
-- Created a mini dataset with `age`, `income`, `bought`.
-- Marked features (`age`, `income`) and target (`bought`).
+## Week 1 Results
 
-## Day 2 Completed
-- Загрузили датасет Titanic (891 строка, 12 колонок)
-- Нашли пропуски: Age (177), Cabin (687), Embarked (2)
-- Age заполнили медианой, Embarked — самым частым значением, Cabin удалили
-- Sex преобразовали в числа: male=0, female=1
-- Только 38% пассажиров выжили
-
-## Day 3 Completed
-
-- Загрузили California Housing датасет (20,640 домов)
-- Разделили данные: 80% train, 20% test
-- Обучили LinearRegression
-- MAE модели: 0.53 ($53,000) vs Baseline: 0.91 ($91,000)
-- Модель в 2 раза точнее чем просто предсказывать среднее
-
-## Day 4 Completed
-
-- Обучили LogisticRegression на данных Titanic
-- Accuracy: 80% — модель правильно классифицирует 80% пассажиров
-- Confusion matrix: 90 TN, 53 TP, 15 FP, 21 FN
-- Какая ошибка хуже — зависит от контекста задачи
-- Precision/Recall/F1 дают более детальную картину чем просто accuracy
-
-## Day 5 Completed
-
-- Decision Tree accuracy: 0.76
-- Random Forest accuracy: 0.80 — чем больше деревьев тем точнее
-- Почему RF лучше: 100 деревьев голосуют, побеждает большинство
-- Топ признаки: Fare (0.30), Sex (0.27), Age (0.26)
-- Fare важнее всего — богатых спасали первыми (каюты ближе к шлюпкам)
-- Sex на втором месте — правило "женщины и дети первыми" подтверждается данными
-
-## Day 6 Completed
-
-- Pipeline автоматизирует цепочку: StandardScaler → LogisticRegression
-- StandardScaler приводит все признаки к одному масштабу
-- Один train/test: accuracy 0.80 (может повезти с разбивкой)
-- Кросс-валидация (5 фолдов): accuracy 0.78 ± 0.02 — честнее и стабильнее
-- Маленький Std (0.02) = модель стабильна
-
-## Day 7 Completed
-## Выводы
-
-- Baseline (предсказывать самый частый класс): 0.59
-- Лучшая модель: Random Forest — accuracy 0.81 (+22% к baseline)
-- Logistic Regression и Decision Tree: 0.78
-- Random Forest стабильнее — предсказания менее зависят от разбивки данных
-- Самые важные признаки: Fare, Sex, Age (богатые, женщины и дети выживали чаще)
-
-## Что можно улучшить
-- Добавить feature engineering (например, размер семьи = SibSp + Parch)
-- Подобрать гиперпараметры Random Forest
-- Попробовать градиентный бустинг (следующий шаг после этой недели)
+| Day | Topic | Key Result |
+|-----|-------|------------|
+| 1 | What is ML | Classification vs Regression, train/test split |
+| 2 | Pandas & cleaning | Missing values, encoding |
+| 3 | Regression | LinearRegression MAE 0.53 vs Baseline 0.91 |
+| 4 | Classification | LogisticRegression accuracy 0.80, F1 0.75 |
+| 5 | Trees | Random Forest accuracy 0.80, top feature: Fare |
+| 6 | Pipeline | cross-validation 0.78 ± 0.02 |
+| 7 | Mini project | RF accuracy 0.81, LR more stable (std 0.02) |
