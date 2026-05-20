@@ -13,7 +13,7 @@ Progress notes for long-term ML study.
 
 ## Week 2
 - [x] Day 1: variables, types, strings, errors
-- [ ] Day 2: conditions and loops
+- [x] Day 2: conditions and loops
 - [ ] Day 3: collections: list/dict/set
 - [ ] Day 4: functions and clean code
 - [ ] Day 5: files and modules

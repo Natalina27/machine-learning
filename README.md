@@ -39,7 +39,7 @@ Learn machine learning from scratch in a practical, notebook-first format.
 | Day | Topic | Status |
 |-----|-------|--------|
 | 1 | Variables, types, strings, errors | ✅ |
-| 2 | Conditions and loops | ⏳ |
+| 2 | Conditions and loops | ✅  |
 | 3 | Collections: list/dict/set | ⏳ |
 | 4 | Functions and clean code | ⏳ |
 | 5 | Files and modules | ⏳ |
