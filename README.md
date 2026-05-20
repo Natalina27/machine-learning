@@ -2,14 +2,55 @@
 
 Hands-on ML notebooks — from fundamentals to production-ready pipelines.
 
-## Quick Start
-pip install -r requirements.txt
-jupyter notebook
+## Prerequisites
 
-Open `week-1/day-1-intro/day1.ipynb`.
+- **Python 3.11+** (recommended: **3.12**)
+- **Git** — clone and track progress
+- **~1 hour/day** for one week (see PDF plans in `resources/`)
+- **Internet** for Week 1 days 2–7 (Titanic CSV download; optional local copy — see [Week 1 Results](#week-1-results))
+- **Editor:** [Cursor](https://cursor.com/) or VS Code with Jupyter support (or classic Jupyter in the browser)
+
+**Stack** (`requirements.txt`): NumPy, Pandas, Matplotlib, scikit-learn, Jupyter, ipykernel.
 
 ## Goal
-Learn machine learning from scratch in a practical, notebook-first format.
+
+Two-week, notebook-first path:
+
+1. **Week 1** — ML workflow: data → model → metrics → pipeline → mini project (Titanic).
+2. **Week 2** — Python foundations for ML: types, control flow, collections, functions, files, NumPy, EDA.
+
+No prior ML experience required for Week 1; Week 2 can be done before or after Week 1 depending on your Python level.
+
+## Quick Start
+
+```bash
+cd machine-learning
+python3.12 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python -m ipykernel install --user --name machine-learning --display-name "Python 3.12 (machine-learning)"
+```
+
+**Run notebooks in Cursor / VS Code:** open a `.ipynb` file → select kernel **Python 3.12 (machine-learning)** (project `.venv`).
+
+**Or in the browser:**
+
+```bash
+jupyter notebook
+```
+
+Start here: `week-1/day-1-intro/day1.ipynb` (ML) or `week-2/day-1-variables/day1.ipynb` (Python base).
+
+**Troubleshooting:** if you see *"requires the ipykernel package"* — pick kernel **Python 3.12 (machine-learning)**, not the system/Homebrew Python. Reload the window if the kernel list is outdated.
+
+## Study Plans (`resources/`)
+
+Weekly plans (PDF, Russian) — one file per week, aligned with notebook folders:
+
+| Week | Plan | Notebooks |
+|------|------|-----------|
+| 1 | [ML from scratch](resources/План_на_неделю_ML_с_нуля_1.pdf) | `week-1/day-1-intro/` … `week-1/day-7-project/` |
+| 2 | [Python base for ML (v2)](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/day-1-variables/` … `week-2/day-7-pandas-eda/` |
 
 ## Repository Structure
 - `week-1/day-1-intro/` — ML basics: terms and first mini dataset
@@ -19,29 +60,60 @@ Learn machine learning from scratch in a practical, notebook-first format.
 - `week-1/day-5-trees/` — Decision Tree, Random Forest, feature importances
 - `week-1/day-6-pipeline/` — Pipeline, StandardScaler, cross-validation
 - `week-1/day-7-project/` — final project: full ML pipeline on Titanic
-- `week-2/` — Python base for ML
-- `resources/` — study plans and reference materials
+
+**Week 2 — Python base for ML** (`dayN.ipynb` in each folder):
+
+- `week-2/day-1-variables/` — variables, types, strings, errors
+- `week-2/day-2-loops/` — conditions and loops
+- `week-2/day-3-collections/` — lists, dicts, sets
+- `week-2/day-4-functions/` — functions and clean code
+- `week-2/day-5-files/` — files and modules
+- `week-2/day-6-numpy/` — NumPy basics
+- `week-2/day-7-pandas-eda/` — Pandas + Matplotlib EDA
+
+- `resources/` — weekly study plans (see [Study Plans](#study-plans-resources))
+- `LEARNING_LOG.md` — progress checklist
 
 ## Week 1 Results
 
-| Day | Topic | Key Result |
-|-----|-------|------------|
-| 1 | What is ML | Classification vs Regression, train/test split |
-| 2 | Pandas & cleaning | Missing values, encoding |
-| 3 | Regression | LinearRegression MAE 0.53 vs Baseline 0.91 |
-| 4 | Classification | LogisticRegression accuracy 0.80, F1 0.75 |
-| 5 | Trees | Random Forest accuracy 0.80, top feature: Fare |
-| 6 | Pipeline | cross-validation 0.78 ± 0.02 |
-| 7 | Mini project | RF accuracy 0.81, LR more stable (std 0.02) |
+Snapshot from completed notebooks (May 2026). Re-running cells may shift numbers slightly.
 
-## Week 2 Progress — Python Base
+**Data & setup**
+- Days **2–7:** [Titanic](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv) via `pd.read_csv(url)` — **internet required** on first run.
+- Optional offline copy: save as `data/titanic.csv` and uncomment the local path in `week-1/day-2-pandas/day2.ipynb` (folder `data/` is gitignored).
+- Day **3:** built-in `fetch_california_housing` (regression, no download).
+- Typical split: `train_test_split(..., test_size=0.2, random_state=42)`; classifiers use `random_state=42`.
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| 1 | Variables, types, strings, errors | ✅ |
-| 2 | Conditions and loops | ✅  |
-| 3 | Collections: list/dict/set | ⏳ |
-| 4 | Functions and clean code | ⏳ |
-| 5 | Files and modules | ⏳ |
-| 6 | NumPy basics | ⏳ |
-| 7 | Pandas + Matplotlib EDA | ⏳ |
+| Day | Notebook | Dataset | Key result |
+|-----|----------|---------|------------|
+| 1 | `day-1-intro/` | synthetic mini example | Classification vs regression, train/test split |
+| 2 | `day-2-pandas/` | Titanic | Missing values, encoding |
+| 3 | `day-3-regression/` | California housing | LinearRegression MAE **0.53** vs baseline **0.91** |
+| 4 | `day-4-classification/` | Titanic (`Survived`) | LogisticRegression accuracy **0.80**, F1 **0.75** |
+| 5 | `day-5-trees/` | Titanic | Random Forest accuracy **0.80**; top feature: **Fare** |
+| 6 | `day-6-pipeline/` | Titanic | 5-fold CV mean accuracy **0.78** ± **0.02** |
+| 7 | `day-7-project/` | Titanic | RF test accuracy **0.81**; LR more stable across CV (std **0.02**) |
+
+## Week 2 Results
+
+Python fundamentals for ML — **skills and exercises**, not model metrics. Notebooks are in Russian; no external dataset (runs offline).
+
+| Day | Notebook | Key outcome |
+|-----|----------|-------------|
+| 1 | `day-1-variables/` | `int` / `float` / `str` / `bool`, f-strings, `type()`; read **NameError**, **TypeError**, **IndexError**; type casting; palindrome check |
+| 2 | `day-2-loops/` | `if` / `elif` / `else`; `for` over list and `range()`; mini **calculator**, char counter (letters/digits/spaces), **max + index** without `max()` |
+| 3 | `day-3-collections/` | *planned* — lists, dicts, sets |
+| 4 | `day-4-functions/` | *planned* — functions, clean code |
+| 5 | `day-5-files/` | *planned* — files and modules |
+| 6 | `day-6-numpy/` | *planned* — NumPy basics |
+| 7 | `day-7-pandas-eda/` | *planned* — Pandas + Matplotlib EDA |
+
+Update this table when you finish a day (replace *planned* with your takeaways). Day-by-day checklist: [LEARNING_LOG.md](LEARNING_LOG.md).
+
+## Progress
+
+**Checklist (Week 1 & 2):** update [LEARNING_LOG.md](LEARNING_LOG.md) when you finish a day — one place for ✅ / todo, no duplicate tables here.
+
+## License
+
+[MIT License](LICENSE) — Copyright (c) 2026 Natalya Myunster.
