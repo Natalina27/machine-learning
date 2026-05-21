@@ -1,8 +1,18 @@
 # Learning Log
 
-Progress checklist for this repo. Update here when you complete a day — [README]([README.md](http://README.md)) links here instead of duplicating status tables.
+Progress checklist for this repo. Update here when you complete a day — [README](README.md) links here instead of duplicating status tables.
 
 Study plans: [Week 1 PDF](resources/План_на_неделю_ML_с_нуля_1.pdf) · [Week 2 PDF](resources/План_Неделя_2_Python_база_под_ML_v2.pdf)
+
+**Backlog (after week-2 merge) — data:**
+
+| Dataset | Action |
+|---------|--------|
+| **Titanic** | Required: full `data/titanic.csv` + switch URL → local in day 2, 4, 5, 6, 7 (`grep TODO week-1`) |
+| **Iris** | Optional cleanup: `data/iris.csv` is **not used** in any notebook — delete or keep for practice |
+| **California housing** | Optional: day 3 uses `fetch_california_housing()` (sklearn cache); export to CSV only if you need offline |
+
+See [data/README.md](data/README.md).
 
 ## Week 1 — ML from scratch
 

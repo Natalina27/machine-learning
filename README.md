@@ -80,8 +80,8 @@ Snapshot from completed notebooks (May 2026). Re-running cells may shift numbers
 
 **Data & setup**
 - Days **2–7:** [Titanic](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv) via `pd.read_csv(url)` — **internet required** on first run.
-- Optional offline copy: save as `data/titanic.csv` and uncomment the local path in `week-1/day-2-pandas/day2.ipynb` (folder `data/` is gitignored).
-- Day **3:** built-in `fetch_california_housing` (regression, no download).
+- **TODO (after week-2 merge):** save full Titanic (891 rows) to `data/titanic.csv`, switch all week-1 `read_csv(url)` to `../../data/titanic.csv` (see `# TODO` in day 2, 4, 5, 6, 7). Details: [data/README.md](data/README.md).
+- Day **3:** `fetch_california_housing()` (sklearn; optional export to `data/`). **`data/iris.csv`** is not used in the course.
 - Typical split: `train_test_split(..., test_size=0.2, random_state=42)`; classifiers use `random_state=42`.
 
 | Day | Notebook | Dataset | Key result |
