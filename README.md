@@ -43,6 +43,38 @@ Start here: `week-1/day-1-intro/day1.ipynb` (ML) or `week-2/day-1-variables/day1
 
 **Troubleshooting:** if you see *"requires the ipykernel package"* — pick kernel **Python 3.12 (machine-learning)**, not the system/Homebrew Python. Reload the window if the kernel list is outdated.
 
+**Workspace settings:** `.vscode/settings.json` points the interpreter at `.venv` and keeps notebooks lean in Git (see [Notebooks and Git](#notebooks-and-git)).
+
+## Notebooks and Git
+
+Committed `.vscode/settings.json` includes:
+
+| Setting | Effect |
+|---------|--------|
+| `notebook.transientOutputs` | Cell outputs are **not** written into `.ipynb` on save |
+| `notebook.output.textLineLimit` | Caps long text output in the editor (100 lines) |
+| `python.defaultInterpreterPath` | Uses project `.venv` |
+
+**Optional — clear outputs in the editor on save:** add to your **user** keybindings (Cursor / VS Code → *Keyboard Shortcuts* → open `keybindings.json`):
+
+```json
+{
+  "key": "cmd+s",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      "notebook.clearAllCellsOutputs",
+      "workbench.action.files.save"
+    ]
+  },
+  "when": "notebookEditorFocused && !notebookOutputFocused"
+}
+```
+
+On **Cmd+S**, visible outputs disappear and the file stays small; re-run cells when you need output again. Keybindings stay local (not in the repo).
+
+**CLI alternative:** [nbstripout](https://github.com/kynan/nbstripout) strips outputs on commit via Git hooks — optional; not required if you use the settings above.
+
 ## Data
 
 CSV files in `data/` (gitignored — keep locally). Week-1 notebooks use `../../data/...`.

@@ -1,5 +1,6 @@
-# VS Code
-.vscode/
+# VS Code — share workspace settings only
+.vscode/*
+!.vscode/settings.json
 
 # JetBrains (PyCharm, etc.)
 .idea/
