@@ -10,7 +10,7 @@ Hands-on ML notebooks — from fundamentals to production-ready pipelines.
 - **Internet** only if `data/*.csv` files are missing (see [Data](#data) below)
 - **Editor:** [Cursor](https://cursor.com/) or VS Code with Jupyter support (or classic Jupyter in the browser)
 
-**Stack** (`requirements.txt`): NumPy, Pandas, Matplotlib, scikit-learn, Jupyter, ipykernel.
+**Stack** (`requirements.txt`, pinned): NumPy, Pandas, Matplotlib, scikit-learn, Jupyter, ipykernel.
 
 ## Goal
 
