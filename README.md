@@ -150,8 +150,8 @@ Python fundamentals for ML — **skills and exercises**, not model metrics. Note
 | 2 | `day-2-loops/` | `if` / `elif` / `else`; `and` / `or` / `not`; `for` over list, string, `range()`; `while`; **calculator**, char counter, **max + index** without `max()` |
 | 3 | `day-3-collections/` | list / dict / set; `.get()`; `top_k()`; set ops `&` `\|` `-`; `copy()` vs `deepcopy()` |
 | 4 | `day-4-functions/` | defaults, `try/except`; list/dict comprehension; `normalize()`; mini-pipeline filter → transform → aggregate |
-| 5 | `day-5-files/` | *planned* — files and modules |
-| 6 | `day-6-numpy/` | *planned* — NumPy basics |
+| 5 | `day-5-files/` | `open` + UTF-8, `pathlib`; `utils.py` + import; text stats (lines, unique words, top-10) → `results.txt` |
+| 6 | `day-6-numpy/` | `ndarray`, `shape`/`reshape`, boolean masks; `mean`/`std` by `axis`; broadcasting; BMI filter, `standardize()`; list vs NumPy speed |
 | 7 | `day-7-pandas-eda/` | *planned* — Pandas + Matplotlib EDA |
 
 Update this table when you finish a day (replace *planned* with your takeaways). Day-by-day checklist: [LEARNING_LOG.md](LEARNING_LOG.md).
