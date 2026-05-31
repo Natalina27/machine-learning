@@ -142,7 +142,7 @@ Snapshot from completed notebooks (May 2026). Re-running cells may shift numbers
 
 ## Week 2 Results
 
-Python fundamentals for ML — **skills and exercises**, not model metrics. Notebooks are in Russian; no external dataset (runs offline).
+Python fundamentals for ML — **skills and exercises**, not model metrics. Notebooks are in Russian. Days 1–6 and day 7 theory run offline; **day 7 assignments** use local `data/titanic.csv` ([Data](#data)).
 
 | Day | Notebook | Key outcome |
 |-----|----------|-------------|
@@ -152,7 +152,7 @@ Python fundamentals for ML — **skills and exercises**, not model metrics. Note
 | 4 | `day-4-functions/` | defaults, `try/except`; list/dict comprehension; `normalize()`; mini-pipeline filter → transform → aggregate |
 | 5 | `day-5-files/` | `open` + UTF-8, `pathlib`; `utils.py` + import; text stats (lines, unique words, top-10) → `results.txt` |
 | 6 | `day-6-numpy/` | `ndarray`, `shape`/`reshape`, boolean masks; `mean`/`std` by `axis`; broadcasting; BMI filter, `standardize()`; list vs NumPy speed |
-| 7 | `day-7-pandas-eda/` | *planned* — Pandas + Matplotlib EDA |
+| 7 | `day-7-pandas-eda/` | `read_csv`, `head`/`info`/`describe`, missing values, `groupby`; matplotlib `hist`/`bar`; theory on `perfumes.csv`; assignments EDA on **Titanic** (`../../data/titanic.csv`) |
 
 Update this table when you finish a day (replace *planned* with your takeaways). Day-by-day checklist: [LEARNING_LOG.md](LEARNING_LOG.md).
 

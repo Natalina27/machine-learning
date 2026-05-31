@@ -24,4 +24,4 @@ Study plans: [Week 1 PDF](resources/План_на_неделю_ML_с_нуля_1.
 - [x] Day 4: functions and clean code — `week-2/day-4-functions/`
 - [x] Day 5: files and modules — `week-2/day-5-files/`
 - [x] Day 6: NumPy basics — `week-2/day-6-numpy/`
-- [ ] Day 7: Pandas + Matplotlib EDA — `week-2/day-7-pandas-eda/`
+- [x] Day 7: Pandas + Matplotlib EDA — `week-2/day-7-pandas-eda/`
