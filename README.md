@@ -73,17 +73,36 @@ Committed `.vscode/settings.json` includes:
 
 On **Cmd+S**, visible outputs disappear and the file stays small; re-run cells when you need output again. Keybindings stay local (not in the repo).
 
-**CLI alternative:** [nbstripout](https://github.com/kynan/nbstripout) strips outputs on commit via Git hooks — optional; not required if you use the settings above.
+**Git + [nbstripout](https://github.com/kynan/nbstripout) (optional):** if `*.ipynb filter=nbstripout` is set (often in `~/.gitattributes`), then `git add .` runs each notebook through `nbstripout` before it lands in the index: **outputs are removed**, file size stays small. Without `--keep-id`, cell ids can reset to `"0"`, `"1"`, … and GitHub notebook preview may break. This repo expects **`--keep-id`** on the filter.
+
+After **clone** (or on a new machine), configure the filter **in this repo** — settings live in `.git/config` and are **not** committed:
+
+```bash
+cd machine-learning   # repository root
+
+git config filter.nbstripout.clean "/Library/Developer/CommandLineTools/usr/bin/python3 -m nbstripout --keep-id"
+git config filter.nbstripout.smudge "cat"
+git config diff.ipynb.textconv "/Library/Developer/CommandLineTools/usr/bin/python3 -m nbstripout -t --keep-id"
+```
+
+Use your `python3` path if different (`which python3`). Check: `git config --get-regexp 'filter\.nbstripout'`.
+
+**What `git add .` does with this setup:** stages all changes; for `.ipynb` files, git stores the **stripped** version (no outputs, **ids kept**). Other files (`.py`, `README.md`, `data/*.csv`, …) are staged as-is. If the filter is missing, `git add` may still work but ids can be corrupted — run the commands above.
+
+If you rely only on `notebook.transientOutputs` in the editor, you can skip nbstripout entirely and remove `filter=nbstripout` from your global `~/.gitattributes`.
 
 ## Data
 
-CSV files in `data/` (gitignored — keep locally). Week-1 notebooks use `../../data/...`.
+CSV files in `data/` are **included in the repository** (clone and run offline). Only `data/*.zip` is gitignored. Start Jupyter from the **repository root** ([Quick Start](#quick-start)); week-2 days 5–7 pick `data/` or a notebook-relative path automatically.
 
 | File | Used in |
 |------|---------|
-| `titanic.csv` | days 2–7 |
-| `california_housing.csv` | day 3 |
-| `iris.csv` | practice / week-2 day 7 |
+| `titanic.csv` | week-1 days 2–7; week-2 day 7 (assignments) |
+| `california_housing.csv` | week-1 day 3 |
+| `iris.csv` | practice / extras |
+| `perfumes.csv` | week-2 day 7 (theory) |
+
+Week-1 notebooks use `../../data/...` from each day folder.
 
 If files are missing, from project root after `pip install -r requirements.txt`:
 
@@ -120,7 +139,7 @@ Weekly plans (PDF, Russian) — one file per week, aligned with notebook folders
 - `week-2/day-6-numpy/` — NumPy basics
 - `week-2/day-7-pandas-eda/` — Pandas + Matplotlib EDA
 
-- `data/` — local CSV datasets ([setup](#data))
+- `data/` — CSV datasets (in repo; [setup](#data) if a file is missing)
 - `resources/` — weekly study plans (see [Study Plans](#study-plans-resources))
 - `LEARNING_LOG.md` — progress checklist
 
@@ -152,7 +171,7 @@ Python fundamentals for ML — **skills and exercises**, not model metrics. Note
 | 4 | `day-4-functions/` | defaults, `try/except`; list/dict comprehension; `normalize()`; mini-pipeline filter → transform → aggregate |
 | 5 | `day-5-files/` | `open` + UTF-8, `pathlib`; `utils.py` + import; text stats (lines, unique words, top-10) → `results.txt` |
 | 6 | `day-6-numpy/` | `ndarray`, `shape`/`reshape`, boolean masks; `mean`/`std` by `axis`; broadcasting; BMI filter, `standardize()`; list vs NumPy speed |
-| 7 | `day-7-pandas-eda/` | `read_csv`, `head`/`info`/`describe`, missing values, `groupby`; matplotlib `hist`/`bar`; theory on `perfumes.csv`; assignments EDA on **Titanic** (`../../data/titanic.csv`) |
+| 7 | `day-7-pandas-eda/` | `read_csv`, `head`/`info`/`describe`, missing values, `groupby`; matplotlib `hist`/`bar`; theory on `perfumes.csv`; assignments EDA on **Titanic** (`data/titanic.csv`) |
 
 Update this table when you finish a day (replace *planned* with your takeaways). Day-by-day checklist: [LEARNING_LOG.md](LEARNING_LOG.md).
 
