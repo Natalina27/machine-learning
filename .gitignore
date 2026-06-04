@@ -1,14 +1,15 @@
-# VS Code
-.vscode/
+# VS Code — share workspace settings only
+.vscode/*
+!.vscode/settings.json
 
 # JetBrains (PyCharm, etc.)
 .idea/
 
 # Jupyter
 .ipynb_checkpoints/
+.mplconfig/
 
-# Data files
-data/*.csv
+# Data files — large files only
 data/*.zip
 
 # Byte-compiled / optimized / DLL files
@@ -226,3 +227,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Cursor
+.cursor/        
+.DS_Store
