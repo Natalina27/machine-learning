@@ -25,3 +25,13 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 - [x] Day 5: files and modules — `week-2/notebooks/day5.ipynb`
 - [x] Day 6: NumPy basics — `week-2/notebooks/day6.ipynb`
 - [x] Day 7: Pandas + Matplotlib EDA — `week-2/notebooks/day7.ipynb`
+
+## Week 3 — Git + first ML models
+
+- [ ] Day 1: Git setup — `week-3/notebooks/day1.ipynb`
+- [ ] Day 2: problem setting — `week-3/notebooks/day2.ipynb`
+- [ ] Day 3: EDA + baseline — `week-3/notebooks/day3.ipynb`
+- [ ] Day 4: classification — `week-3/notebooks/day4.ipynb`
+- [ ] Day 5: regression — `week-3/notebooks/day5.ipynb`
+- [ ] Day 6: validation & CV — `week-3/notebooks/day6.ipynb`
+- [ ] Day 7: final project — `week-3/notebooks/day7.ipynb`
