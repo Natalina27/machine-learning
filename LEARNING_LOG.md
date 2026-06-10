@@ -28,10 +28,10 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 
 ## Week 3 — Git + first ML models
 
-- [ ] Day 1: Git setup — `week-3/notebooks/day1.ipynb`
-- [ ] Day 2: problem setting — `week-3/notebooks/day2.ipynb`
-- [ ] Day 3: EDA + baseline — `week-3/notebooks/day3.ipynb`
-- [ ] Day 4: classification — `week-3/notebooks/day4.ipynb`
-- [ ] Day 5: regression — `week-3/notebooks/day5.ipynb`
-- [ ] Day 6: validation & CV — `week-3/notebooks/day6.ipynb`
-- [ ] Day 7: final project — `week-3/notebooks/day7.ipynb`
+- [ ] Day 1: Git setup — `week-3/notebooks/day01_git_setup.ipynb`
+- [ ] Day 2: problem setting — `week-3/notebooks/day02_problem_setting.ipynb`
+- [ ] Day 3: EDA + baseline — `week-3/notebooks/day03_eda_baseline.ipynb`
+- [ ] Day 4: classification — `week-3/notebooks/day04_classification.ipynb`
+- [ ] Day 5: regression — `week-3/notebooks/day05_regression.ipynb`
+- [ ] Day 6: validation & CV — `week-3/notebooks/day06_validation_cv.ipynb`
+- [ ] Day 7: final project — `week-3/notebooks/day07_final_project.ipynb`
