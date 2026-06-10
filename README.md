@@ -14,12 +14,11 @@ Hands-on ML notebooks — from fundamentals to production-ready pipelines.
 
 ## Goal
 
-Two-week, notebook-first path:
-
 1. **Week 1** — ML workflow: data → model → metrics → pipeline → mini project (Titanic).
 2. **Week 2** — Python foundations for ML: types, control flow, collections, functions, files, NumPy, EDA.
+3. **Week 3** — Git workflow + first scikit-learn models: EDA, classification, regression, cross-validation, final project.
 
-No prior ML experience required for Week 1; Week 2 can be done before or after Week 1 depending on your Python level.
+No prior ML experience required for Week 1; Week 2 can be done before or after Week 1 depending on your Python level. Week 3 builds on Weeks 1–2.
 
 ## Quick Start
 
@@ -117,8 +116,9 @@ Weekly plans (PDF, Russian) — one file per week, aligned with notebook folders
 
 | Week | Plan | Notebooks |
 |------|------|-----------|
-| 1 | [ML from scratch](resources/План_на_неделю_ML_с_нуля_1.pdf) | `week-1/day-1-intro/` … `week-1/day-7-project/` |
+| 1 | [ML from scratch](resources/План_Неделя_1_ML_с_нуля_1.pdf) | `week-1/day-1-intro/` … `week-1/day-7-project/` |
 | 2 | [Python base for ML (v2)](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/day-1-variables/` … `week-2/day-7-pandas-eda/` |
+| 3 | [Git + First ML Models](resources/План_Неделя_3_Git_и_первая_ML_модель.pdf) | `week-3/notebooks/` |
 
 ## Repository Structure
 - `week-1/day-1-intro/` — ML basics: terms and first mini dataset
@@ -174,6 +174,30 @@ Python fundamentals for ML — **skills and exercises**, not model metrics. Note
 | 7 | `day-7-pandas-eda/` | `read_csv`, `head`/`info`/`describe`, missing values, `groupby`; matplotlib `hist`/`bar`; theory on `perfumes.csv`; assignments EDA on **Titanic** (`data/titanic.csv`) |
 
 Update this table when you finish a day (replace *planned* with your takeaways). Day-by-day checklist: [LEARNING_LOG.md](LEARNING_LOG.md).
+
+
+## Week 3 — Git + First ML Models
+
+**Goal:** build a full ML project in GitHub and train first scikit-learn models.
+
+### Structure
+- `week-3/notebooks/` — daily notebooks
+- `week-3/src/` — helper functions
+- `week-3/figures/` — saved plots
+- `week-3/reports/` — weekly summary
+
+### Week 3 Progress
+
+| Day | Notebook | Status | Result |
+|-----|----------|--------|--------|
+| 1 | `day01_git_setup.ipynb` | planned | — |
+| 2 | `day02_problem_setting.ipynb` | planned | — |
+| 3 | `day03_eda_baseline.ipynb` | planned | — |
+| 4 | `day04_classification.ipynb` | planned | — |
+| 5 | `day05_regression.ipynb` | planned | — |
+| 6 | `day06_validation_cv.ipynb` | planned | — |
+| 7 | `day07_final_project.ipynb` | planned | — |
+
 
 ## Progress
 

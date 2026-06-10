@@ -2,7 +2,7 @@
 
 Progress checklist for this repo. Update here when you complete a day — [README](README.md) links here instead of duplicating status tables.
 
-Study plans: [Week 1 PDF](resources/План_на_неделю_ML_с_нуля_1.pdf) · [Week 2 PDF](resources/План_Неделя_2_Python_база_под_ML_v2.pdf)
+Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf) · [Week 2 PDF](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) · [Week 3 PDF](resources/План_Неделя_3_Git_и_первая_ML_модель.pdf)
 
 **Data:** `data/*.csv` — setup in [README → Data](README.md#data).
 
