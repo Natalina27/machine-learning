@@ -38,7 +38,7 @@ python -m ipykernel install --user --name machine-learning --display-name "Pytho
 jupyter notebook
 ```
 
-Start here: `week-1/day-1-intro/day1.ipynb` (ML) or `week-2/day-1-variables/day1.ipynb` (Python base).
+Start here: `week-1/notebooks/day1.ipynb` (ML) or `week-2/notebooks/day1.ipynb` (Python base).
 
 **Troubleshooting:** if you see *"requires the ipykernel package"* — pick kernel **Python 3.12 (machine-learning)**, not the system/Homebrew Python. Reload the window if the kernel list is outdated.
 
@@ -116,28 +116,14 @@ Weekly plans (PDF, Russian) — one file per week, aligned with notebook folders
 
 | Week | Plan | Notebooks |
 |------|------|-----------|
-| 1 | [ML from scratch](resources/План_Неделя_1_ML_с_нуля_1.pdf) | `week-1/day-1-intro/` … `week-1/day-7-project/` |
-| 2 | [Python base for ML (v2)](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/day-1-variables/` … `week-2/day-7-pandas-eda/` |
+| 1 | [ML from scratch](resources/План_Неделя_1_ML_с_нуля_1.pdf) | `week-1/notebooks/` |
+| 2 | [Python base for ML (v2)](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/notebooks/` |
 | 3 | [Git + First ML Models](resources/План_Неделя_3_Git_и_первая_ML_модель.pdf) | `week-3/notebooks/` |
 
 ## Repository Structure
-- `week-1/day-1-intro/` — ML basics: terms and first mini dataset
-- `week-1/day-2-pandas/` — data loading and cleaning
-- `week-1/day-3-regression/` — Linear Regression, MAE/RMSE, baseline
-- `week-1/day-4-classification/` — Logistic Regression, confusion matrix, F1
-- `week-1/day-5-trees/` — Decision Tree, Random Forest, feature importances
-- `week-1/day-6-pipeline/` — Pipeline, StandardScaler, cross-validation
-- `week-1/day-7-project/` — final project: full ML pipeline on Titanic
-
-**Week 2 — Python base for ML** (`dayN.ipynb` in each folder):
-
-- `week-2/day-1-variables/` — variables, types, strings, errors
-- `week-2/day-2-loops/` — conditions and loops
-- `week-2/day-3-collections/` — lists, dicts, sets
-- `week-2/day-4-functions/` — functions and clean code
-- `week-2/day-5-files/` — files and modules
-- `week-2/day-6-numpy/` — NumPy basics
-- `week-2/day-7-pandas-eda/` — Pandas + Matplotlib EDA
+- `week-1/notebooks/` — `day1.ipynb` … `day7.ipynb` (ML from scratch)
+- `week-2/notebooks/` — `day1.ipynb` … `day7.ipynb` (Python base for ML)
+- `week-2/notebooks/data/` — `utils.py`, `sample.txt`, `results.txt` (day 5)
 
 - `data/` — CSV datasets (in repo; [setup](#data) if a file is missing)
 - `resources/` — weekly study plans (see [Study Plans](#study-plans-resources))
