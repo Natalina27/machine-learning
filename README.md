@@ -36,7 +36,7 @@ Open `.ipynb` → kernel **Python 3.12 (machine-learning)**. Run from **repo roo
 |------|---------|
 | `titanic.csv` | week-1, week-2 day 7 |
 | `california_housing.csv` | week-1 day 3 |
-| `iris.csv` | extras |
+| `iris.csv` | week-3 day 2 (also via `load_iris()`) |
 | `perfumes.csv` | week-2 day 7 |
 
 If missing after clone:

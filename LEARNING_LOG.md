@@ -28,8 +28,8 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 
 ## Week 3 — Git + first ML models
 
-- [ ] Day 1: Git setup — `week-3/notebooks/day01_git_setup.ipynb`
-- [ ] Day 2: problem setting — `week-3/notebooks/day02_problem_setting.ipynb`
+- [x] Day 1: Git setup — `week-3/notebooks/day01_git_setup.ipynb`
+- [x] Day 2: problem setting — `week-3/notebooks/day02_problem_setting.ipynb` — Iris (`load_iris`), X/y split, train/test 80/20 (120/30), `stratify=y`
 - [ ] Day 3: EDA + baseline — `week-3/notebooks/day03_eda_baseline.ipynb`
 - [ ] Day 4: classification — `week-3/notebooks/day04_classification.ipynb`
 - [ ] Day 5: regression — `week-3/notebooks/day05_regression.ipynb`
