@@ -60,6 +60,18 @@ git config diff.ipynb.textconv "/Library/Developer/CommandLineTools/usr/bin/pyth
 
 Per-repo only (`.git/config`, not committed). Use your `python3` path if different.
 
+## Week 3 — Iris classification (day 4)
+
+Iris, `train_test_split(test_size=0.2, random_state=42, stratify=y)` — same split as day 2–3.
+
+| Model | Accuracy | Notes |
+|-------|----------|-------|
+| Baseline (`most_frequent`) | 0.33 | always predicts one class |
+| LogisticRegression | 0.97 | 1 error: versicolor → virginica |
+| DecisionTreeClassifier | 0.93 | versicolor ↔ virginica confusion |
+
+Notebook: `week-3/notebooks/day04_classification.ipynb`
+
 ## License
 
 [MIT License](LICENSE) — Copyright (c) 2026 Natalya Myunster.
