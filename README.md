@@ -72,6 +72,18 @@ Iris, `train_test_split(test_size=0.2, random_state=42, stratify=y)` — same sp
 
 Notebook: `week-3/notebooks/day04_classification.ipynb`
 
+## Week 3 — Diabetes regression (day 5)
+
+`load_diabetes()`, `train_test_split(test_size=0.2, random_state=42)`. Lower MAE/RMSE is better; higher R² is better.
+
+| Model | MAE | RMSE | R² | Notes |
+|-------|-----|------|----|-------|
+| Baseline (`DummyRegressor mean`) | 64.0 | 73.2 | −0.01 | always predicts train mean |
+| LinearRegression | 42.8 | 53.9 | 0.45 | best model |
+| DecisionTreeRegressor | 54.5 | 70.5 | 0.06 | unrestricted tree, weak on test |
+
+Notebook: `week-3/notebooks/day05_regression.ipynb` · plot: `week-3/figures/05_y_true_vs_y_pred_linear_regression.png`
+
 ## License
 
 [MIT License](LICENSE) — Copyright (c) 2026 Natalya Myunster.

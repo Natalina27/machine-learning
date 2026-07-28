@@ -32,6 +32,6 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 - [x] Day 2: problem setting — `week-3/notebooks/day02_problem_setting.ipynb` — Iris (`load_iris`), X/y split, train/test 80/20 (120/30), `stratify=y`
 - [x] Day 3: EDA + baseline — `week-3/notebooks/day03_eda_baseline.ipynb`
 - [x] Day 4: classification — `week-3/notebooks/day04_classification.ipynb` — LogisticRegression 0.97, DecisionTree 0.93 vs baseline 0.33
-- [ ] Day 5: regression — `week-3/notebooks/day05_regression.ipynb`
+- [x] Day 5: regression — `week-3/notebooks/day05_regression.ipynb` — Diabetes: LinearRegression MAE 42.8 / R² 0.45 vs baseline MAE 64.0
 - [ ] Day 6: validation & CV — `week-3/notebooks/day06_validation_cv.ipynb`
 - [ ] Day 7: final project — `week-3/notebooks/day07_final_project.ipynb`
