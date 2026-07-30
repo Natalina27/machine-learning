@@ -84,6 +84,22 @@ Notebook: `week-3/notebooks/day04_classification.ipynb`
 
 Notebook: `week-3/notebooks/day05_regression.ipynb` · plot: `week-3/figures/05_y_true_vs_y_pred_linear_regression.png`
 
+## Week 3 — Validation & CV (day 6)
+
+Diabetes + `DecisionTreeRegressor`, sweep `max_depth = 1, 2, 3, 5, None`. Score = R² (higher is better).
+
+| max_depth | train R² | test R² | CV mean ± std | Notes |
+|-----------|----------|---------|---------------|-------|
+| 1 | 0.30 | 0.13 | 0.17 ± 0.10 | underfitting |
+| **2** | 0.45 | 0.30 | **0.33 ± 0.09** | best CV — chosen |
+| 3 | 0.52 | 0.33 | 0.31 ± 0.08 | close second |
+| 5 | 0.67 | 0.33 | 0.21 ± 0.09 | gap grows |
+| None | 1.00 | 0.06 | −0.15 ± 0.08 | strong overfitting |
+
+Why `max_depth=2`: highest 5-fold CV mean with a moderate train−test gap; unrestricted depth memorizes train.
+
+Notebook: `week-3/notebooks/day06_validation_cv.ipynb` · plot: `week-3/figures/06_max_depth_vs_score.png`
+
 ## License
 
 [MIT License](LICENSE) — Copyright (c) 2026 Natalya Myunster.
