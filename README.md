@@ -2,15 +2,21 @@
 
 Personal ML learning repo — weekly notebooks, PDF plans, day-by-day progress in [LEARNING_LOG.md](LEARNING_LOG.md).
 
+**Where to look**
+- Setup / data / Git tips → this README
+- Day checklist → [LEARNING_LOG.md](LEARNING_LOG.md)
+- Week conclusions + final metrics → `week-N/reports/week0N_summary.md` (RU + EN)
+- Intermediate day metrics (week 3) → tables below (not copied into the week summary)
+
 ## Curriculum
 
 Details in `resources/*.pdf` and notebooks.
 
-| Week | Topic | Plan | Code | Status |
-|------|-------|------|------|--------|
-| 1 | ML from scratch → pipeline on Titanic | [PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf) | `week-1/` | done |
-| 2 | Python base for ML | [PDF](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/` | done |
-| 3 | Git + first scikit-learn models | [PDF](resources/План_Неделя_3_Git_и_первая_ML_модель.pdf) | `week-3/` | in progress |
+| Week | Topic | Plan | Code | Summary | Status |
+|------|-------|------|------|---------|--------|
+| 1 | ML from scratch → pipeline on Titanic | [PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf) | `week-1/` | [week01](week-1/reports/week01_summary.md) | done |
+| 2 | Python base for ML | [PDF](resources/План_Неделя_2_Python_база_под_ML_v2.pdf) | `week-2/` | [week02](week-2/reports/week02_summary.md) | done |
+| 3 | Git + first scikit-learn models | [PDF](resources/План_Неделя_3_Git_и_первая_ML_модель.pdf) | `week-3/` | [week03](week-3/reports/week03_summary.md) | done |
 
 ## Quick Start
 
@@ -60,7 +66,11 @@ git config diff.ipynb.textconv "/Library/Developer/CommandLineTools/usr/bin/pyth
 
 Per-repo only (`.git/config`, not committed). Use your `python3` path if different.
 
-## Week 3 — Iris classification (day 4)
+## Week 3 — day results (intermediate)
+
+Day-by-day numbers for Iris / Diabetes while learning. **Week wrap-up** (final Diabetes comparison + conclusions): [`week-3/reports/week03_summary.md`](week-3/reports/week03_summary.md).
+
+### Iris classification (day 4)
 
 Iris, `train_test_split(test_size=0.2, random_state=42, stratify=y)` — same split as day 2–3.
 
@@ -72,19 +82,19 @@ Iris, `train_test_split(test_size=0.2, random_state=42, stratify=y)` — same sp
 
 Notebook: `week-3/notebooks/day04_classification.ipynb`
 
-## Week 3 — Diabetes regression (day 5)
+### Diabetes regression (day 5)
 
-`load_diabetes()`, `train_test_split(test_size=0.2, random_state=42)`. Lower MAE/RMSE is better; higher R² is better.
+`load_diabetes()`, `train_test_split(test_size=0.2, random_state=42)`. Lower MAE/RMSE is better; higher R² is better. Tree here is **unrestricted** (`max_depth=None`).
 
 | Model | MAE | RMSE | R² | Notes |
 |-------|-----|------|----|-------|
 | Baseline (`DummyRegressor mean`) | 64.0 | 73.2 | −0.01 | always predicts train mean |
-| LinearRegression | 42.8 | 53.9 | 0.45 | best model |
+| LinearRegression | 42.8 | 53.9 | 0.45 | best on this day |
 | DecisionTreeRegressor | 54.5 | 70.5 | 0.06 | unrestricted tree, weak on test |
 
 Notebook: `week-3/notebooks/day05_regression.ipynb` · plot: `week-3/figures/05_y_true_vs_y_pred_linear_regression.png`
 
-## Week 3 — Validation & CV (day 6)
+### Validation & CV (day 6)
 
 Diabetes + `DecisionTreeRegressor`, sweep `max_depth = 1, 2, 3, 5, None`. Score = R² (higher is better).
 
@@ -99,6 +109,12 @@ Diabetes + `DecisionTreeRegressor`, sweep `max_depth = 1, 2, 3, 5, None`. Score 
 Why `max_depth=2`: highest 5-fold CV mean with a moderate train−test gap; unrestricted depth memorizes train.
 
 Notebook: `week-3/notebooks/day06_validation_cv.ipynb` · plot: `week-3/figures/06_max_depth_vs_score.png`
+
+### Final mini-project (day 7)
+
+End-to-end Diabetes (baseline → LinearRegression → tree `max_depth=2`). Full metrics + conclusions: [`week-3/reports/week03_summary.md`](week-3/reports/week03_summary.md).
+
+Notebook: `week-3/notebooks/day07_final_project.ipynb` · plot: `week-3/figures/07_y_true_vs_y_pred_linear_regression.png`
 
 ## License
 

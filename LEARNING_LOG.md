@@ -14,7 +14,7 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 - [x] Day 4: classification and metrics — `week-1/notebooks/day4.ipynb`
 - [x] Day 5: trees and random forest — `week-1/notebooks/day5.ipynb`
 - [x] Day 6: leakage, overfitting, pipeline — `week-1/notebooks/day6.ipynb`
-- [x] Day 7: mini project — `week-1/notebooks/day7.ipynb`
+- [x] Day 7: mini project — `week-1/notebooks/day7.ipynb` — summary `week-1/reports/week01_summary.md`
 
 ## Week 2 — Python base for ML
 
@@ -24,7 +24,7 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 - [x] Day 4: functions and clean code — `week-2/notebooks/day4.ipynb`
 - [x] Day 5: files and modules — `week-2/notebooks/day5.ipynb`
 - [x] Day 6: NumPy basics — `week-2/notebooks/day6.ipynb`
-- [x] Day 7: Pandas + Matplotlib EDA — `week-2/notebooks/day7.ipynb`
+- [x] Day 7: Pandas + Matplotlib EDA — `week-2/notebooks/day7.ipynb` — summary `week-2/reports/week02_summary.md`
 
 ## Week 3 — Git + first ML models
 
@@ -34,4 +34,4 @@ Study plans: [Week 1 PDF](resources/План_Неделя_1_ML_с_нуля_1.pdf
 - [x] Day 4: classification — `week-3/notebooks/day04_classification.ipynb` — LogisticRegression 0.97, DecisionTree 0.93 vs baseline 0.33
 - [x] Day 5: regression — `week-3/notebooks/day05_regression.ipynb` — Diabetes: LinearRegression MAE 42.8 / R² 0.45 vs baseline MAE 64.0
 - [x] Day 6: validation & CV — `week-3/notebooks/day06_validation_cv.ipynb` — Diabetes tree: best `max_depth=2` (CV R² ~0.33); `None` overfits (train 1.0 / CV −0.15)
-- [ ] Day 7: final project — `week-3/notebooks/day07_final_project.ipynb`
+- [x] Day 7: final project — `week-3/notebooks/day07_final_project.ipynb` — Diabetes: LinearRegression MAE 42.8 / R² 0.45 vs tree `max_depth=2` MAE 49.4 / R² 0.30 vs baseline MAE 64.0; summary `week-3/reports/week03_summary.md`
